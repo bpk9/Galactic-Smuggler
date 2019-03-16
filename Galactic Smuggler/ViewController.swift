@@ -14,20 +14,30 @@ class ViewController: UIViewController {
     @IBOutlet var items: UIStackView!
     @IBOutlet var planetName: UILabel!
     
+    var inventory: Inventory;
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        initGame();
         
     }
     
-    func loadPlanet(planet: PlanetObject)
+    func initGame()
+    {
+        let starting_cash = 100;
+        
+        self.inventory = Inventory(money: <#Double#>);
+        
+    }
+    
+    func loadPlanet(planet: Planet)
     {
         self.planetName.text = planet.getName();
         self.loadStackForPlanet(planet: planet)
     }
     
-    func loadStackForPlanet(planet: PlanetObject)
+    func loadStackForPlanet(planet: Planet)
     {
         for item in planet.getItems()
         {

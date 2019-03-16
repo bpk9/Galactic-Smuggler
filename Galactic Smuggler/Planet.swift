@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PlanetObject
+class Planet
 {
     private var name: String;
     private var image: UIImage;
