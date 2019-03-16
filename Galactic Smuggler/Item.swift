@@ -15,6 +15,7 @@ class Item
     
     init(name: String, image: UIImage)
     {
+        self.name = name;
         self.price = 0;
         self.image = image;
     }

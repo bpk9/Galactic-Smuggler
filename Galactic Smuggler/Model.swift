@@ -11,9 +11,11 @@ import UIKit
 class Model{
     
     //Pictures:
-    let Earthpic = UIImage(named: "EarthSmuggle.png")
-    let Marspic = UIImage(named: "MarsSmubble.png")
+    let Earthpic = UIImage(named: "EarthSmuggle.png") as! UIImage
+    let Marspic = UIImage(named: "MarsSmubble.png") as! UIImage
     
+    //Items:
+    //var Gold = Item(name: "Gold", image: )
     
     //Item Arrays:
     let EarthItems = ["Humans", "Organs", "Water", "Iron", "Tungsten", "Aluminum", "Lithium"]
@@ -21,8 +23,8 @@ class Model{
     
     
     func InitializePlanets() {
-        var Earth = Planet(name: "Earth", image: Earthpic,items: EarthItems)
-        var Mars = Planets(name: "Mars", image: Marspic, items: MarsItems)
+        var Earth = Planet(name: "Earth", image: Earthpic, items: EarthItems)
+        var Mars = Planet(name: "Mars", image: Marspic, items: MarsItems)
     
                            
     }
