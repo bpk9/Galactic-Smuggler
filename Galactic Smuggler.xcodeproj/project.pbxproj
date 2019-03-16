@@ -18,6 +18,7 @@
 		D3698E6B223D99E2006F37AB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3698E6A223D99E2006F37AB /* Item.swift */; };
 		D36C2783223DA4CC000F7D16 /* PurchaseWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36C2782223DA4CC000F7D16 /* PurchaseWindow.swift */; };
 		D36C2785223DA873000F7D16 /* PurchaseWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D36C2784223DA873000F7D16 /* PurchaseWindow.xib */; };
+		D36C2789223DBC62000F7D16 /* Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36C2788223DBC62000F7D16 /* Inventory.swift */; };
 		D38F46E3223DA0C30064E862 /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38F46E2223DA0C30064E862 /* Market.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		D3698E6A223D99E2006F37AB /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		D36C2782223DA4CC000F7D16 /* PurchaseWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseWindow.swift; sourceTree = "<group>"; };
 		D36C2784223DA873000F7D16 /* PurchaseWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PurchaseWindow.xib; sourceTree = "<group>"; };
+		D36C2788223DBC62000F7D16 /* Inventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory.swift; sourceTree = "<group>"; };
 		D38F46E2223DA0C30064E862 /* Market.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +83,7 @@
 				8D922A90223DB32100806078 /* PlanetLaunchView.swift */,
 				D36C2782223DA4CC000F7D16 /* PurchaseWindow.swift */,
 				D36C2784223DA873000F7D16 /* PurchaseWindow.xib */,
+				D36C2788223DBC62000F7D16 /* Inventory.swift */,
 			);
 			path = "Galactic Smuggler";
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 				8D922A91223DB32100806078 /* PlanetLaunchView.swift in Sources */,
 				D3698E6B223D99E2006F37AB /* Item.swift in Sources */,
 				D3698E58223D995F006F37AB /* ViewController.swift in Sources */,
+				D36C2789223DBC62000F7D16 /* Inventory.swift in Sources */,
 				8D922A93223DB36700806078 /* Planet.swift in Sources */,
 				D3698E56223D995F006F37AB /* AppDelegate.swift in Sources */,
 				D3698E5E223D995F006F37AB /* Galactic_Smuggler.xcdatamodeld in Sources */,

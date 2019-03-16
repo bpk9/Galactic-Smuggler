@@ -13,9 +13,9 @@ class Item
     private var price: Double;
     private var image: UIImage;
     
-    init(name: String, price: Double, image: UIImage)
+    init(name: String, image: UIImage)
     {
-        self.price = price;
+        self.price = 0;
         self.image = image;
     }
     
