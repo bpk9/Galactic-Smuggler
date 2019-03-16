@@ -136,7 +136,7 @@
                                 <connections>
                                     <action selector="LeftPlanet" destination="DhA-d8-VKw" eventType="touchUpInside" id="Jpg-6D-X2i"/>
                                     <action selector="LeftPlanet:" destination="DhA-d8-VKw" eventType="touchUpInside" id="7mY-J1-HRn"/>
-                                    <action selector="LeftPlanet:" destination="Xg1-L8-hPg" eventType="touchUpInside" id="DND-Eb-aHE"/>
+                                    <action selector="LeftPlanet:" destination="Xg1-L8-hPg" eventType="touchUpInside" id="nQD-au-jdQ"/>
                                 </connections>
                             </button>
                         </subviews>
