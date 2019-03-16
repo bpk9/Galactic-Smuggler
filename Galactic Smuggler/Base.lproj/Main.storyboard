@@ -20,9 +20,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10000.28" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wru-uf-K2b">
-                                <rect key="frame" x="145.66666666666666" y="43" width="84" height="21"/>
+                                <rect key="frame" x="146" y="43" width="84" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="1hk-Rp-6RQ"/>
+                                    <constraint firstAttribute="height" constant="21" id="nhn-4Z-r6v"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.36078431370000003" green="0.60392156860000001" blue="0.027450980390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -32,56 +32,57 @@
                                 <rect key="frame" x="3" y="782" width="41" height="30"/>
                                 <state key="normal" title="Travel"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8R-yw-zzR">
-                                <rect key="frame" x="311" y="781" width="64" height="30"/>
-                                <state key="normal" title="Next DaY"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBD-pl-1yi">
-                                <rect key="frame" x="0.0" y="38" width="67.666666666666671" height="31"/>
+                                <rect key="frame" x="0.0" y="38" width="68" height="31"/>
                                 <state key="normal" title="Graph"/>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hqR-i8-i6D">
                                 <rect key="frame" x="0.0" y="115" width="375" height="659"/>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PbR-D9-OWe">
-                                <rect key="frame" x="308.66666666666669" y="46" width="66.333333333333314" height="23"/>
+                                <rect key="frame" x="309" y="46" width="66" height="23"/>
                                 <state key="normal" title="Settings"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Planet Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Spr-7x-FrH">
-                                <rect key="frame" x="138.66666666666666" y="86" width="98" height="21"/>
+                                <rect key="frame" x="139" y="86" width="98" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8R-yw-zzR">
+                                <rect key="frame" x="308" y="782" width="63" height="30"/>
+                                <state key="normal" title="Next Day"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="DBD-pl-1yi" firstAttribute="centerY" secondItem="wru-uf-K2b" secondAttribute="centerY" id="38G-ua-rjj"/>
-                            <constraint firstItem="DBD-pl-1yi" firstAttribute="bottom" secondItem="PbR-D9-OWe" secondAttribute="bottom" id="4hT-G0-aTd"/>
-                            <constraint firstItem="Spr-7x-FrH" firstAttribute="centerX" secondItem="hqR-i8-i6D" secondAttribute="centerX" id="8hp-NM-8Tk"/>
-                            <constraint firstItem="PbR-D9-OWe" firstAttribute="leading" secondItem="wru-uf-K2b" secondAttribute="trailing" constant="79" id="BfG-7n-xYv"/>
-                            <constraint firstItem="L35-xa-jdJ" firstAttribute="top" secondItem="hqR-i8-i6D" secondAttribute="bottom" constant="8" symbolic="YES" id="Bwf-5X-LgR"/>
-                            <constraint firstItem="DBD-pl-1yi" firstAttribute="leading" secondItem="hqR-i8-i6D" secondAttribute="leading" id="E9D-mX-Tad"/>
-                            <constraint firstItem="PbR-D9-OWe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="2" id="FE2-Qj-lRt"/>
-                            <constraint firstItem="DBD-pl-1yi" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-6" id="FK6-8g-Mat"/>
-                            <constraint firstItem="b8R-yw-zzR" firstAttribute="top" secondItem="hqR-i8-i6D" secondAttribute="bottom" constant="7" id="GNd-ip-q3Q"/>
-                            <constraint firstItem="wru-uf-K2b" firstAttribute="leading" secondItem="DBD-pl-1yi" secondAttribute="trailing" constant="78" id="Ibk-IH-w14"/>
-                            <constraint firstItem="PbR-D9-OWe" firstAttribute="trailing" secondItem="hqR-i8-i6D" secondAttribute="trailing" id="Pty-OY-ZtY"/>
-                            <constraint firstItem="L35-xa-jdJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-13" id="SBs-8A-C6d"/>
-                            <constraint firstItem="hqR-i8-i6D" firstAttribute="trailing" secondItem="b8R-yw-zzR" secondAttribute="trailing" id="Vxu-K1-mAG"/>
-                            <constraint firstItem="DBD-pl-1yi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dTg-3o-4kq"/>
-                            <constraint firstItem="Spr-7x-FrH" firstAttribute="top" secondItem="wru-uf-K2b" secondAttribute="bottom" constant="22" id="hkL-Lq-LTM"/>
-                            <constraint firstAttribute="bottom" secondItem="L35-xa-jdJ" secondAttribute="bottom" id="jPm-WB-bbd"/>
-                            <constraint firstItem="hqR-i8-i6D" firstAttribute="top" secondItem="Spr-7x-FrH" secondAttribute="bottom" constant="8" symbolic="YES" id="kPR-Uk-ZIJ"/>
-                            <constraint firstItem="wru-uf-K2b" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-1" id="m6H-ka-5D8"/>
-                            <constraint firstItem="wru-uf-K2b" firstAttribute="centerX" secondItem="Spr-7x-FrH" secondAttribute="centerX" id="nfL-rr-Lpl"/>
-                            <constraint firstAttribute="trailing" secondItem="PbR-D9-OWe" secondAttribute="trailing" id="oEn-UX-GXx"/>
+                            <constraint firstItem="L35-xa-jdJ" firstAttribute="baseline" secondItem="b8R-yw-zzR" secondAttribute="baseline" id="4Yd-fO-E0G"/>
+                            <constraint firstItem="L35-xa-jdJ" firstAttribute="top" secondItem="hqR-i8-i6D" secondAttribute="bottom" constant="8" symbolic="YES" id="6Bf-DJ-V5f"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="b8R-yw-zzR" secondAttribute="trailing" constant="-12" id="7Dw-Gj-cOl"/>
+                            <constraint firstItem="DBD-pl-1yi" firstAttribute="centerY" secondItem="wru-uf-K2b" secondAttribute="centerY" id="7LT-oj-IM7"/>
+                            <constraint firstItem="wru-uf-K2b" firstAttribute="leading" secondItem="DBD-pl-1yi" secondAttribute="trailing" constant="78" id="7Op-VY-pUY"/>
+                            <constraint firstAttribute="trailing" secondItem="PbR-D9-OWe" secondAttribute="trailing" id="DBx-IR-OUy"/>
+                            <constraint firstItem="wru-uf-K2b" firstAttribute="centerX" secondItem="Spr-7x-FrH" secondAttribute="centerX" id="FXY-Ph-kIz"/>
+                            <constraint firstItem="DBD-pl-1yi" firstAttribute="bottom" secondItem="PbR-D9-OWe" secondAttribute="bottom" id="HbJ-71-nDn"/>
+                            <constraint firstItem="wru-uf-K2b" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-1" id="IFb-2Y-A8H"/>
+                            <constraint firstItem="Spr-7x-FrH" firstAttribute="centerX" secondItem="hqR-i8-i6D" secondAttribute="centerX" id="IrJ-R7-7dD"/>
+                            <constraint firstItem="DBD-pl-1yi" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-6" id="Ose-kV-FTr"/>
+                            <constraint firstItem="PbR-D9-OWe" firstAttribute="trailing" secondItem="hqR-i8-i6D" secondAttribute="trailing" id="QEu-dU-j2V"/>
+                            <constraint firstItem="Spr-7x-FrH" firstAttribute="top" secondItem="wru-uf-K2b" secondAttribute="bottom" constant="22" id="Qfq-6S-pTg"/>
+                            <constraint firstItem="L35-xa-jdJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-13" id="T2i-C6-QVY"/>
+                            <constraint firstItem="DBD-pl-1yi" firstAttribute="leading" secondItem="hqR-i8-i6D" secondAttribute="leading" id="Vuz-Ua-dET"/>
+                            <constraint firstItem="DBD-pl-1yi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZhH-Sj-ybH"/>
+                            <constraint firstItem="hqR-i8-i6D" firstAttribute="top" secondItem="Spr-7x-FrH" secondAttribute="bottom" constant="8" symbolic="YES" id="ht3-na-hJV"/>
+                            <constraint firstItem="PbR-D9-OWe" firstAttribute="leading" secondItem="wru-uf-K2b" secondAttribute="trailing" constant="79" id="ooU-qt-B1E"/>
+                            <constraint firstItem="PbR-D9-OWe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="2" id="uAx-M2-zku"/>
+                            <constraint firstAttribute="bottom" secondItem="L35-xa-jdJ" secondAttribute="bottom" id="vcA-ZX-Awd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="cash" destination="wru-uf-K2b" id="uZf-kx-ro0"/>
                         <outlet property="items" destination="hqR-i8-i6D" id="7cE-o8-gRF"/>
+                        <outlet property="planetName" destination="Spr-7x-FrH" id="yTC-N3-sba"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

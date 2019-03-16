@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     @IBOutlet var cash: UILabel!
     @IBOutlet var items: UIStackView!
+    @IBOutlet var planetName: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,9 +21,24 @@ class ViewController: UIViewController {
         
     }
     
+    func loadPlanet(planet: PlanetObject)
+    {
+        self.planetName.text = planet.getName();
+        self.loadStackForPlanet(planet: planet)
+    }
+    
     func loadStackForPlanet(planet: PlanetObject)
     {
-        
+        for item in planet.getItems()
+        {
+            self.addItemToStackView(item: item);
+        }
+    }
+    
+    func addItemToStackView(item: Item)
+    {
+        let itemView: PurchaseWindow = PurchaseWindow.instanceFromNib() as! PurchaseWindow;
+        itemView.loadUI(item: item);
     }
     
 }
