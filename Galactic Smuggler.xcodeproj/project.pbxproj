@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8D922A8A223DAAD000806078 /* PlanetLaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D922A89223DAAD000806078 /* PlanetLaunchView.swift */; };
 		8D922A8E223DB0D900806078 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D922A8D223DB0D900806078 /* Planet.swift */; };
+		8D922A91223DB32100806078 /* PlanetLaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D922A90223DB32100806078 /* PlanetLaunchView.swift */; };
+		8D922A93223DB36700806078 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D922A92223DB36700806078 /* Planet.swift */; };
 		D3698E56223D995F006F37AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3698E55223D995F006F37AB /* AppDelegate.swift */; };
 		D3698E58223D995F006F37AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3698E57223D995F006F37AB /* ViewController.swift */; };
 		D3698E5B223D995F006F37AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3698E59223D995F006F37AB /* Main.storyboard */; };
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		8D922A89223DAAD000806078 /* PlanetLaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetLaunchView.swift; sourceTree = "<group>"; };
 		8D922A8D223DB0D900806078 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		8D922A90223DB32100806078 /* PlanetLaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetLaunchView.swift; sourceTree = "<group>"; };
+		8D922A92223DB36700806078 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		D3698E52223D995F006F37AB /* Galactic Smuggler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Galactic Smuggler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3698E55223D995F006F37AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3698E57223D995F006F37AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,11 +55,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D922A8F223DB1EC00806078 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				8D922A8D223DB0D900806078 /* Planet.swift */,
+				8D922A89223DAAD000806078 /* PlanetLaunchView.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		D3698E49223D995F006F37AB = {
 			isa = PBXGroup;
 			children = (
 				D3698E54223D995F006F37AB /* Galactic Smuggler */,
 				D3698E53223D995F006F37AB /* Products */,
+				8D922A8F223DB1EC00806078 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +94,8 @@
 				D3698E6A223D99E2006F37AB /* Item.swift */,
 				D38F46E0223D9E2C0064E862 /* File.swift */,
 				D38F46E2223DA0C30064E862 /* Market.swift */,
+				8D922A92223DB36700806078 /* Planet.swift */,
+				8D922A90223DB32100806078 /* PlanetLaunchView.swift */,
 				D36C2782223DA4CC000F7D16 /* PurchaseWindow.swift */,
 				D36C2784223DA873000F7D16 /* PurchaseWindow.xib */,
 			);
@@ -159,9 +175,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D38F46E1223D9E2C0064E862 /* File.swift in Sources */,
+				8D922A91223DB32100806078 /* PlanetLaunchView.swift in Sources */,
 				D3698E6B223D99E2006F37AB /* Item.swift in Sources */,
 				D3698E58223D995F006F37AB /* ViewController.swift in Sources */,
 				8D922A8E223DB0D900806078 /* Planet.swift in Sources */,
+				8D922A93223DB36700806078 /* Planet.swift in Sources */,
 				8D922A8A223DAAD000806078 /* PlanetLaunchView.swift in Sources */,
 				D3698E56223D995F006F37AB /* AppDelegate.swift in Sources */,
 				D3698E5E223D995F006F37AB /* Galactic_Smuggler.xcdatamodeld in Sources */,
