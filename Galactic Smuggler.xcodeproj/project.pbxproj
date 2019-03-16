@@ -13,6 +13,7 @@
 		D3698E5E223D995F006F37AB /* Galactic_Smuggler.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3698E5C223D995F006F37AB /* Galactic_Smuggler.xcdatamodeld */; };
 		D3698E60223D9961006F37AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3698E5F223D9961006F37AB /* Assets.xcassets */; };
 		D3698E63223D9961006F37AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3698E61223D9961006F37AB /* LaunchScreen.storyboard */; };
+		D3698E6B223D99E2006F37AB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3698E6A223D99E2006F37AB /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D3698E5F223D9961006F37AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3698E62223D9961006F37AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3698E64223D9961006F37AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3698E6A223D99E2006F37AB /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				D3698E61223D9961006F37AB /* LaunchScreen.storyboard */,
 				D3698E64223D9961006F37AB /* Info.plist */,
 				D3698E5C223D995F006F37AB /* Galactic_Smuggler.xcdatamodeld */,
+				D3698E6A223D99E2006F37AB /* Item.swift */,
 			);
 			path = "Galactic Smuggler";
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3698E6B223D99E2006F37AB /* Item.swift in Sources */,
 				D3698E58223D995F006F37AB /* ViewController.swift in Sources */,
 				D3698E56223D995F006F37AB /* AppDelegate.swift in Sources */,
 				D3698E5E223D995F006F37AB /* Galactic_Smuggler.xcdatamodeld in Sources */,
