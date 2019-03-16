@@ -15,6 +15,7 @@
 		D3698E63223D9961006F37AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3698E61223D9961006F37AB /* LaunchScreen.storyboard */; };
 		D3698E6B223D99E2006F37AB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3698E6A223D99E2006F37AB /* Item.swift */; };
 		D36C2783223DA4CC000F7D16 /* PurchaseWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36C2782223DA4CC000F7D16 /* PurchaseWindow.swift */; };
+		D36C2785223DA873000F7D16 /* PurchaseWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D36C2784223DA873000F7D16 /* PurchaseWindow.xib */; };
 		D38F46E1223D9E2C0064E862 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38F46E0223D9E2C0064E862 /* File.swift */; };
 		D38F46E3223DA0C30064E862 /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38F46E2223DA0C30064E862 /* Market.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		D3698E64223D9961006F37AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3698E6A223D99E2006F37AB /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		D36C2782223DA4CC000F7D16 /* PurchaseWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseWindow.swift; sourceTree = "<group>"; };
+		D36C2784223DA873000F7D16 /* PurchaseWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PurchaseWindow.xib; sourceTree = "<group>"; };
 		D38F46E0223D9E2C0064E862 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		D38F46E2223DA0C30064E862 /* Market.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +77,7 @@
 				D38F46E0223D9E2C0064E862 /* File.swift */,
 				D38F46E2223DA0C30064E862 /* Market.swift */,
 				D36C2782223DA4CC000F7D16 /* PurchaseWindow.swift */,
+				D36C2784223DA873000F7D16 /* PurchaseWindow.xib */,
 			);
 			path = "Galactic Smuggler";
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			files = (
 				D3698E63223D9961006F37AB /* LaunchScreen.storyboard in Resources */,
 				D3698E60223D9961006F37AB /* Assets.xcassets in Resources */,
+				D36C2785223DA873000F7D16 /* PurchaseWindow.xib in Resources */,
 				D3698E5B223D995F006F37AB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
