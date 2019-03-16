@@ -21,13 +21,13 @@ class ViewController: UIViewController {
         
     }
     
-    func loadPlanet(planet: PlanetObject)
+    func loadPlanet(planet: Planet)
     {
         self.planetName.text = planet.getName();
         self.loadStackForPlanet(planet: planet)
     }
     
-    func loadStackForPlanet(planet: PlanetObject)
+    func loadStackForPlanet(planet: Planet)
     {
         for item in planet.getItems()
         {
