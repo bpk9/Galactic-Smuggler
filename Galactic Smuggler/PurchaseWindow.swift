@@ -10,19 +10,8 @@ import UIKit
 
 class PurchaseWindow: UIView
 {
-    var lessButton: UIButton = {
-        
-    };
+    
     var item: Item;
     var moreButton: UIButton;
-    
-    init(frame: CGRect, item: Item)
-    {
-        self.item = item;
-        super.init(frame: frame);
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder);
-    }
+   
 }
