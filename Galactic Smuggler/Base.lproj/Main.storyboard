@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,41 +19,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$10000.28" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wru-uf-K2b">
-                                <rect key="frame" x="145" y="43" width="84" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10000.28" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wru-uf-K2b">
+                                <rect key="frame" x="145.33333333333334" y="43" width="84" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="1hk-Rp-6RQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.36078431370000003" green="0.60392156860000001" blue="0.027450980390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L35-xa-jdJ">
+                                <rect key="frame" x="3" y="782" width="41" height="30"/>
+                                <state key="normal" title="Travel"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8R-yw-zzR">
+                                <rect key="frame" x="311" y="781" width="64" height="30"/>
+                                <state key="normal" title="Next DaY"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBD-pl-1yi">
+                                <rect key="frame" x="0.0" y="38" width="67.333333333333329" height="30"/>
+                                <state key="normal" title="Graph"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hqR-i8-i6D">
+                                <rect key="frame" x="0.0" y="115" width="375" height="659"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PbR-D9-OWe">
+                                <rect key="frame" x="308.33333333333331" y="46" width="66.666666666666686" height="22"/>
+                                <state key="normal" title="Settings"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Planet Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Spr-7x-FrH">
+                                <rect key="frame" x="138.33333333333334" y="86" width="98" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L35-xa-jdJ">
-                                <rect key="frame" x="3" y="782" width="41" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Travel"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8R-yw-zzR">
-                                <rect key="frame" x="311" y="781" width="64" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next DaY"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBD-pl-1yi">
-                                <rect key="frame" x="0.0" y="38" width="67" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Graph"/>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hqR-i8-i6D">
-                                <rect key="frame" x="0.0" y="76" width="375" height="702"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PbR-D9-OWe">
-                                <rect key="frame" x="308" y="46" width="67" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Settings"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DBD-pl-1yi" firstAttribute="centerY" secondItem="wru-uf-K2b" secondAttribute="centerY" id="38G-ua-rjj"/>
+                            <constraint firstItem="DBD-pl-1yi" firstAttribute="bottom" secondItem="PbR-D9-OWe" secondAttribute="bottom" id="4hT-G0-aTd"/>
+                            <constraint firstItem="Spr-7x-FrH" firstAttribute="centerX" secondItem="hqR-i8-i6D" secondAttribute="centerX" id="8hp-NM-8Tk"/>
+                            <constraint firstItem="PbR-D9-OWe" firstAttribute="leading" secondItem="wru-uf-K2b" secondAttribute="trailing" constant="79" id="BfG-7n-xYv"/>
+                            <constraint firstItem="L35-xa-jdJ" firstAttribute="top" secondItem="hqR-i8-i6D" secondAttribute="bottom" constant="8" symbolic="YES" id="Bwf-5X-LgR"/>
+                            <constraint firstItem="DBD-pl-1yi" firstAttribute="leading" secondItem="hqR-i8-i6D" secondAttribute="leading" id="E9D-mX-Tad"/>
+                            <constraint firstItem="PbR-D9-OWe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="2" id="FE2-Qj-lRt"/>
+                            <constraint firstItem="DBD-pl-1yi" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-6" id="FK6-8g-Mat"/>
+                            <constraint firstItem="b8R-yw-zzR" firstAttribute="top" secondItem="hqR-i8-i6D" secondAttribute="bottom" constant="7" id="GNd-ip-q3Q"/>
+                            <constraint firstItem="wru-uf-K2b" firstAttribute="leading" secondItem="DBD-pl-1yi" secondAttribute="trailing" constant="78" id="Ibk-IH-w14"/>
+                            <constraint firstItem="PbR-D9-OWe" firstAttribute="trailing" secondItem="hqR-i8-i6D" secondAttribute="trailing" id="Pty-OY-ZtY"/>
+                            <constraint firstItem="L35-xa-jdJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-13" id="SBs-8A-C6d"/>
+                            <constraint firstItem="hqR-i8-i6D" firstAttribute="trailing" secondItem="b8R-yw-zzR" secondAttribute="trailing" id="Vxu-K1-mAG"/>
+                            <constraint firstItem="DBD-pl-1yi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dTg-3o-4kq"/>
+                            <constraint firstItem="Spr-7x-FrH" firstAttribute="top" secondItem="wru-uf-K2b" secondAttribute="bottom" constant="22" id="hkL-Lq-LTM"/>
+                            <constraint firstAttribute="bottom" secondItem="L35-xa-jdJ" secondAttribute="bottom" id="jPm-WB-bbd"/>
+                            <constraint firstItem="hqR-i8-i6D" firstAttribute="top" secondItem="Spr-7x-FrH" secondAttribute="bottom" constant="8" symbolic="YES" id="kPR-Uk-ZIJ"/>
+                            <constraint firstItem="wru-uf-K2b" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-1" id="m6H-ka-5D8"/>
+                            <constraint firstItem="wru-uf-K2b" firstAttribute="centerX" secondItem="Spr-7x-FrH" secondAttribute="centerX" id="nfL-rr-Lpl"/>
+                            <constraint firstAttribute="trailing" secondItem="PbR-D9-OWe" secondAttribute="trailing" id="oEn-UX-GXx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="cash" destination="wru-uf-K2b" id="uZf-kx-ro0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
