@@ -17,6 +17,10 @@ class PlanetLaunchView: UIView
     @IBOutlet var Back: UIButton!
     @IBOutlet weak var PlanetLabel: UILabel!
     @IBOutlet weak var PlanetImage: UIImageView!
+    var EarthPic = UIImageView(named: "EarthSmuggle")
+    var MarsPic = UIImageView(named: "MarsSmuggle")
+    
+
     
     @IBAction func LeftPlanetAction(_ sender: UIButton) {
     }
@@ -29,6 +33,8 @@ class PlanetLaunchView: UIView
     
     @IBAction func BackAction(_ sender: UIButton) {
     }
+    
+    
     
     
 }
