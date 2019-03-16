@@ -23,11 +23,11 @@ class PurchaseWindow: UIView
     init(frame: CGRect, item: Item)
     {
         super.init(frame: frame);
-        loadUI(item: item)
+        loadUI(item: item);
     }
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder);
     }
     
     
