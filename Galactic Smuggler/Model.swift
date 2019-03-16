@@ -25,7 +25,7 @@ class Model{
     func InitializePlanets() {
         var Earth = Planet(name: "Earth", image: Earthpic, items: EarthItems)
         var Mars = Planet(name: "Mars", image: Marspic, items: MarsItems)
-    
+        var Planets = [Earth, Mars]
                            
     }
     
