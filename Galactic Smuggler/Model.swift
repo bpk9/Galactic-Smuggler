@@ -16,12 +16,14 @@ class Model{
     
     
     //Item Arrays:
-    let EarthItems = ["Humans"]
+    let EarthItems = ["Humans", "Organs", "Water", "Iron", "Tungsten", "Aluminum", "Lithium"]
     let MarsItems = ["Iron", "Tungsten", "Aluminum", "Gold", "Lithium", "Niobium"]
     
     
     func InitializePlanets() {
-        var Earth = Planet("Earth", Earthpic,
+        var Earth = Planet(name: "Earth", image: Earthpic,items: EarthItems)
+        var Mars = Planets(name: "Mars", image: Marspic, items: MarsItems)
+    
                            
     }
     
