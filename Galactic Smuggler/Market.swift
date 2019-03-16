@@ -8,7 +8,11 @@
 
 class Market
 {
-    init() {
+    init()
+    {
         
     }
+    
+    func 
+    
 }
