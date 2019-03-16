@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         
     }
     
-    func loadStackForPlanet(planet: Planet)
+    func loadStackForPlanet(planet: PlanetObject)
     {
         
     }

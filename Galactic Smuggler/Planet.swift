@@ -6,13 +6,14 @@
 //  Copyright © 2019 Brian P Kasper. All rights reserved.
 //
 
-class Planet
+class PlanetObject
 {
     private var name: String;
-    private
+    private var items: [Item];
     
-    init(name: String)
+    init(name: String, items: [Item])
     {
         self.name = name;
+        self.items = items;
     }
 }
