@@ -11,16 +11,24 @@ import UIKit
 
 class PlanetLaunchView: UIView
 {
-    @IBAction func LeftPlanet(_ sender: UIButton) {
+    @IBOutlet var LeftPlanet: UIButton!
+    @IBOutlet var RightPlanet: UIButton!
+    @IBOutlet var Launch: UIButton!
+    @IBOutlet var Back: UIButton!
+    @IBOutlet weak var PlanetLabel: UILabel!
+    @IBOutlet weak var PlanetImage: UIImageView!
+    
+    @IBAction func LeftPlanetAction(_ sender: UIButton) {
     }
     
-    @IBAction func RightPlanet(_ sender: UIButton) {
+    @IBAction func RightPlanetAction(_ sender: UIButton) {
     }
     
-    @IBAction func LaunchButton(_ sender: UIButton) {
+    @IBAction func LaunchAction(_ sender: UIButton) {
     }
     
-    @IBAction func Back(_ sender: UIButton) {
+    @IBAction func BackAction(_ sender: UIButton) {
     }
+    
     
 }

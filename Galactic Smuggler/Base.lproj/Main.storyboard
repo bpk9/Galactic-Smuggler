@@ -145,6 +145,8 @@
                         <viewLayoutGuide key="safeArea" id="SNs-lU-Jhs"/>
                         <connections>
                             <outlet property="LeftPlanet" destination="Gjj-Dq-8uN" id="812-aV-uhh"/>
+                            <outlet property="PlanetImage" destination="Tph-0w-jFB" id="itn-pI-SYX"/>
+                            <outlet property="PlanetLabel" destination="bww-5f-2AC" id="uKp-3y-DGd"/>
                         </connections>
                     </view>
                 </viewController>
