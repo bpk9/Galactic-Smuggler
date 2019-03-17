@@ -16,6 +16,7 @@ class Model{
     static let Goldpic = UIImage(named: "GOld.png") as! UIImage
     //Items:
     static var Gold : Item = Item(name: "Gold", image: Goldpic)
+    static var Tungsten : Item = Item(name: "Tungsten", image: Goldpic)
     //var Gold = Item(name: "Gold", image: )
     static let EarthItems : [Item] = [Gold]
     static let MarsItems : [Item] = []
