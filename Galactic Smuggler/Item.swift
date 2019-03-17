@@ -49,6 +49,8 @@ class Item
         var newPrice = PriceHistory[PriceHistory.count - 1] + Change;
         if newPrice < 0 {
             newPrice = newPrice - (1.2 * Change);
+        } else if newPrice > 100 {
+            newPrice = newPrice - (1.2 * Change);
         }
         PriceHistory.append(newPrice)
         setPrice(price: newPrice)

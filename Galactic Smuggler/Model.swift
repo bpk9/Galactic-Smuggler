@@ -13,16 +13,18 @@ class Model{
     static let inventory = Inventory(money: 100, items: [:])
     
     //Pictures:
+    
     static let Earthpic = UIImage(named: "EarthSmuggle.png") as! UIImage
     static let Marspic = UIImage(named: "MarsSmuggle.png") as! UIImage
     static let Goldpic = UIImage(named: "GOld.png") as! UIImage
     static let Waterpic = UIImage(named: "waterdrum.png") as! UIImage
+    static let Niodiumpic = UIImage(named: "Niodium.png") as! UIImage
     
     
     
     //Items:
-    static var Gold : Item = Item(name: "Gold Ingot", starting_price: 5.0, image: Goldpic)
-    static var Water : Item = Item(name: "Water Barrel", starting_price: 2.0, image: Waterpic)
+    static var Gold : Item = Item(name: "Gold Ingot", starting_price: 40.0, image: Goldpic)
+    static var Water : Item = Item(name: "Water Barrel", starting_price: 20.0, image: Waterpic)
     //static var Niobium : Item = Item(name: "Niobium Ore", image: Niobiumpic)
     //var Gold = Item(name: "Gold", image: )
     
@@ -44,7 +46,6 @@ class Model{
     
     //Markets:
     static var EarthMarket : Market = Market(planet: Earth)
-    static var EarthItemPrice : [Double] = [100, 20]
     
     static func passDay() {
         for planet in Model.Planets {

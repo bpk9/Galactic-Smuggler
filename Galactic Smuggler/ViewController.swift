@@ -94,6 +94,7 @@ class ViewController: UIViewController, InventoryDelegate {
     
     @IBAction func NextDayrun(_ sender: Any) {
         Model.passDay()
+        self.updateItems()
     }
     
     func updateItems()
@@ -103,6 +104,7 @@ class ViewController: UIViewController, InventoryDelegate {
             if let view = view as? PurchaseWindow
             {
                 view.updateUI();
+                
             }
         }
     }

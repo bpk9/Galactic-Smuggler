@@ -44,7 +44,6 @@ class PurchaseWindow: UIView
     {
         self.item = item;
         self.itemPicture.image = item.getImage();
-        self.itemPrice.text = String(format: "%.2f", item.getPrice());
         self.itemName.text = item.getName();
         self.lessButton.isHidden = true;
         self.updateUI()
@@ -84,6 +83,11 @@ class PurchaseWindow: UIView
         {
             self.lessButton.isHidden = false;
         }
+        if let item = self.item
+        {
+            self.itemPrice.text = String(format: "%.2f", item.getPrice());
+        }
+        
         
     }
     
