@@ -16,32 +16,47 @@ class Model{
     
     static let Earthpic = UIImage(named: "EarthSmuggle.png") as! UIImage
     static let Marspic = UIImage(named: "MarsSmuggle.png") as! UIImage
+    static let Moonpic = UIImage(named: "moon.png") as! UIImage
     static let Goldpic = UIImage(named: "GOld.png") as! UIImage
     static let Waterpic = UIImage(named: "waterdrum.png") as! UIImage
     static let Niobiumpic = UIImage(named: "Niodium.png") as! UIImage
-    
+    static let Heliumpic = UIImage(named: "Helium.png") as! UIImage
+
     
     
     //Items:
-    static var Gold : Item = Item(name: "Gold Ingot", starting_price: 40.0, image: Goldpic)
-    static var Water : Item = Item(name: "Water Barrel", starting_price: 20.0, image: Waterpic)
-    static var Niobium : Item = Item(name: "Niobium Ore", starting_price: 60.0, image: Niobiumpic)
-    //var Gold = Item(name: "Gold", image: )
+    static var Gold1 : Item = Item(name: "Gold Ingot", starting_price: 30.0, image: Goldpic)
+    static var Gold2 : Item = Item(name: "Gold Ingot", starting_price: 50.0, image: Goldpic)
+    static var Gold3 : Item = Item(name: "Gold Ingot", starting_price: 40.0, image: Goldpic)
+
+    static var Water1 : Item = Item(name: "Water Barrel", starting_price: 20.0, image: Waterpic)
+    static var Water2 : Item = Item(name: "Water Barrel", starting_price: 60.0, image: Waterpic)
+    static var Water3 : Item = Item(name: "Water Barrel", starting_price: 50.0, image: Waterpic)
+
+    static var Niobium1 : Item = Item(name: "Niobium Ore", starting_price: 60.0, image: Niobiumpic)
+    static var Niobium2 : Item = Item(name: "Niobium Ore", starting_price: 30.0, image: Niobiumpic)
+    static var Niobium3 : Item = Item(name: "Niobium Ore", starting_price: 80.0, image: Niobiumpic)
+
+    static var Helium1 : Item = Item(name: "Helium Gas", starting_price: 30.0, image: Heliumpic)
+    static var Helium2 : Item = Item(name: "Helium Gas", starting_price: 60.0, image: Heliumpic)
+    static var Helium3 : Item = Item(name: "Helium Gas", starting_price: 5.0, image: Heliumpic)
+
     
     
-    
-    static let EarthItems: [Item] = [Gold, Water]
-    static let MarsItems: [Item] = [Gold, Niobium]
+    static let EarthItems: [Item] = [Gold1, Water1, Niobium1, Helium1]
+    static let MarsItems: [Item] = [Gold2, Water2, Niobium2, Helium2]
+    static let MoonItems: [Item] = [Gold3, Water3, Niobium3, Helium3]
     
     static var current_planet: Planet! = Earth;
     
     
-    static var Planets : [Planet] = [Earth, Mars]
+    static var Planets : [Planet] = [Earth, Mars, Moon]
     
     
     
     static var Earth = Planet(name: "Earth", image: Earthpic, items: EarthItems)
     static var Mars = Planet(name: "Mars", image: Marspic, items: MarsItems)
+    static var Moon = Planet(name: "Moon", image: Moonpic, items: MoonItems)
     //Item Arrays:
     
     //Markets:

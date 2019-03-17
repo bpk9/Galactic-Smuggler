@@ -87,8 +87,7 @@ class PurchaseWindow: UIView
         {
             self.itemPrice.text = String(format: "%.2f", item.getPrice());
         }
-        
-        
+
     }
     
 }
