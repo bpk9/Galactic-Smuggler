@@ -17,12 +17,6 @@ class Market
         }
     }
     
-    func passDay() {
-        for planet in Model.Planets {
-            for item in planet.getItems() {
-                item.passDay()
-        }
-    }
     
     
-}
+    

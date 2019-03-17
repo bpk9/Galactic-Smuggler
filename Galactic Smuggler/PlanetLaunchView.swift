@@ -63,7 +63,7 @@ class PlanetLaunchView: UIViewController
     }
     
     @IBAction func LaunchAction(_ sender: UIButton) {
-        print("Blast Off!")
+        Model.passDay()
         performSegue(withIdentifier: "unwindHome", sender: self)
     }
     

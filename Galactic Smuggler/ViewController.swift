@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet var cash: UILabel!
     @IBOutlet var items: UIStackView!
     @IBOutlet var planetName: UILabel!
+    @IBOutlet weak var nextDay: UIButton!
     
     // init variables
     let starting_cash = 100.0;
@@ -96,5 +97,8 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func NextDayrun(_ sender: Any) {
+        Model.passDay()
+    }
 }
 
