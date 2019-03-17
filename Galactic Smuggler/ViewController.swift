@@ -38,6 +38,7 @@ class ViewController: UIViewController {
         
         self.current_planet = Model.Earth;
         self.loadPlanet(planet: self.current_planet);
+        print(self.current_planet.getName())
         
     }
     
@@ -54,13 +55,14 @@ class ViewController: UIViewController {
     func loadPlanet(planet: Planet)
     {
         self.planetName.text = planet.getName();
-        self.loadStackForPlanet(planet: planet)
+        self.loadStackForPlanet(planet: planet);
     }
     
     func loadStackForPlanet(planet: Planet)
     {
         for item in planet.getItems()
         {
+            print(item.getName())
             self.addItemToStackView(item: item);
         }
     }
@@ -69,6 +71,10 @@ class ViewController: UIViewController {
     {
         let itemView: PurchaseWindow = PurchaseWindow.instanceFromNib() as! PurchaseWindow;
         itemView.loadUI(item: item);
+        
+        self.items.addArrangedSubview(itemView);
+        print("Added")
+        self.view.addSubview(self.items);
     }
     
 }

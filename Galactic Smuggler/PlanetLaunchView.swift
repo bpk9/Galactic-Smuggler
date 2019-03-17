@@ -21,7 +21,6 @@ class PlanetLaunchView: UIView
     @IBOutlet weak var PlanetImage: UIImageView!
     var IndexPlanet = 0
     var CurrentPlanet: Planet = Model.Earth;
-    PlanetImage.image = CurrentPlanet.getImage()
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
