@@ -51,7 +51,7 @@ class PlanetLaunchView: UIViewController
             self.LeftPlanet.isHidden = true;
         }
         self.setCurrent(planet: Model.Planets[index])
-        print(currentPlanet.getName())
+        //print(currentPlanet.getName())
         UpdateUI()
     }
     
@@ -65,7 +65,7 @@ class PlanetLaunchView: UIViewController
         }
         
         self.setCurrent(planet: Model.Planets[index])
-        print(currentPlanet.getName())
+        //print(currentPlanet.getName())
         UpdateUI()
     }
     
@@ -81,7 +81,7 @@ class PlanetLaunchView: UIViewController
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     }
     func UpdateUI() {
-        print(Model.current_planet.getName(), currentPlanet.getName())
+        //print(Model.current_planet.getName(), currentPlanet.getName())
         if (Model.current_planet.getName() == currentPlanet.getName()) {
             Launch.isHidden = true;
         }
