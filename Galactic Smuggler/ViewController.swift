@@ -36,7 +36,8 @@ class ViewController: UIViewController {
         self.money = starting_cash;
         updateCash();
         
-        updatePlanet();
+        self.current_planet = Model.Earth;
+        self.loadPlanet(planet: self.current_planet);
         
     }
     
@@ -48,11 +49,6 @@ class ViewController: UIViewController {
     func updateCash()
     {
         self.cash.text = String(money);
-    }
-    
-    func updatePlanet()
-    {
-        self.planetName.text = self.current_planet?.getName() ?? "Current Planets";
     }
     
     func loadPlanet(planet: Planet)
