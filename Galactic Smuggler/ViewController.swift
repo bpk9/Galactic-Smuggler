@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet var items: UIStackView!
     @IBOutlet var planetName: UILabel!
     
-    var inventory: Inventory;
+    var inventory: Inventory!;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,10 +25,9 @@ class ViewController: UIViewController {
     
     func initGame()
     {
-        let starting_cash = 100;
+        let starting_cash = 100.0;
         
-        self.inventory = Inventory(money: <#Double#>);
-        
+        self.inventory = Inventory(money: starting_cash, items: []);
     }
     
     func loadPlanet(planet: Planet)
