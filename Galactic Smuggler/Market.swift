@@ -23,9 +23,9 @@ class Market
     }
     
     func passDay() {
-        for key, value in ItemHistory {
+        for (key, value) in ItemHistory {
             let Change = Int.random(in: -5 ... 5)
-            value[] = ItemHistory[key[(ItemHistory[key].count - 1)]] + Change
+            //ItemHistory[key][value.count] = ItemHistory[key][value.count - 1] + Change
         }
         
     }
