@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     // global
     var inventory: Inventory = Model.inventory;
     var money: Double = Model.inventory.getMoney();
-    var current_planet: Planet!;
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,8 +30,8 @@ class ViewController: UIViewController {
         
         updateCash();
         
-        self.current_planet = Model.Earth;
-        self.loadPlanet(planet: self.current_planet);
+        Model.current_planet = Model.Earth;
+        self.loadPlanet(planet: Model.current_planet);
         
     }
     
@@ -81,6 +81,7 @@ class ViewController: UIViewController {
     {
         if let source = source.source as? PlanetLaunchView
         {
+            
             self.changePlanet(planet: source.currentPlanet)
         }
     }
@@ -88,5 +89,7 @@ class ViewController: UIViewController {
     @IBAction func NextDayrun(_ sender: Any) {
         Model.passDay()
     }
+    
+
 }
 

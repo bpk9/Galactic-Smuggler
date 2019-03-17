@@ -19,10 +19,14 @@ class PlanetLaunchView: UIViewController
     @IBOutlet weak var PlanetLabel: UILabel!
     @IBOutlet weak var PlanetImage: UIImageView!
     var index: Int = 0
-    var currentPlanet: Planet = Model.Earth;
+    var currentPlanet: Planet = Model.Earth
+    
+
+    
     
     override func viewDidAppear(_ animated: Bool) {
         self.LeftPlanet.isHidden = true;
+        Launch.isHidden = true;
         self.index = 0
         self.currentPlanet = Model.Earth;
         self.setCurrent(planet: self.currentPlanet);
@@ -40,26 +44,29 @@ class PlanetLaunchView: UIViewController
         if (index > 1)
         {
             index -= 1
+        
         }
         else
         {
             index = 0;
+
             self.LeftPlanet.isHidden = true;
         }
         self.setCurrent(planet: Model.Planets[index])
+        UpdateUI()
     }
     
     @IBAction func RightPlanetAction(_ sender: UIButton) {
         
         self.LeftPlanet.isHidden = false;
         index += 1
-        
         if (index == Model.Planets.count - 1)
         {
             self.RightPlanet.isHidden = true
         }
         
         self.setCurrent(planet: Model.Planets[index])
+        UpdateUI()
     }
     
     @IBAction func LaunchAction(_ sender: UIButton) {
@@ -73,6 +80,14 @@ class PlanetLaunchView: UIViewController
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     }
-    
+    func UpdateUI() {
+        if (Model.current_planet.getName() == currentPlanet.getName()) {
+            Launch.isHidden = true;
+        }
+        else
+        {
+            Launch.isHidden = false;
+        }
+    }
     
 }

@@ -34,10 +34,6 @@
                                     <segue destination="o6d-Kc-a68" kind="show" id="3Gl-hh-VXk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBD-pl-1yi">
-                                <rect key="frame" x="5" y="38" width="84.5" height="31"/>
-                                <state key="normal" title="Graph"/>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hqR-i8-i6D">
                                 <rect key="frame" x="5" y="115" width="409" height="620"/>
                             </stackView>
@@ -59,6 +55,13 @@
                                 <state key="normal" title="Next Day"/>
                                 <connections>
                                     <action selector="NextDayrun:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ih7-P4-0Qg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBD-pl-1yi">
+                                <rect key="frame" x="5" y="38" width="84.5" height="31"/>
+                                <state key="normal" title="Graph"/>
+                                <connections>
+                                    <segue destination="RUa-jS-Jzl" kind="show" id="yxg-87-khp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -97,7 +100,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.74384236453201"/>
+            <point key="canvasLocation" x="136.23188405797103" y="133.25892857142856"/>
         </scene>
         <!--Planet Launch View-->
         <scene sceneID="DeQ-qT-nqX">
@@ -230,13 +233,31 @@
                     <view key="view" contentMode="scaleToFill" id="IS5-wW-GlU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hL-Ve-1uH">
+                                <rect key="frame" x="20" y="44" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="VyX-IF-1nu"/>
+                                </connections>
+                            </button>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="287" translatesAutoresizingMaskIntoConstraints="NO" id="3Vh-lk-cjC">
+                                <rect key="frame" x="19" y="221" width="375" height="287"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Vh-lk-cjC" id="pij-Gi-arl">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="286.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="bvx-CR-0lk"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JEp-xU-ssw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2093" y="131"/>
+            <point key="canvasLocation" x="2092.753623188406" y="130.58035714285714"/>
         </scene>
     </scenes>
 </document>

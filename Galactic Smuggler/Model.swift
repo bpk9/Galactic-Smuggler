@@ -31,6 +31,7 @@ class Model{
     static let EarthItems: [Item] = [Gold, Water]
     static let MarsItems: [Item] = [Gold]
     
+    static var current_planet: Planet! = Earth;
     
     
     static var Planets : [Planet] = [Earth, Mars]
