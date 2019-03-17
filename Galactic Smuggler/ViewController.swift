@@ -38,7 +38,6 @@ class ViewController: UIViewController {
         
         self.current_planet = Model.Earth;
         self.loadPlanet(planet: self.current_planet);
-        print(self.current_planet.getName())
         
     }
     
@@ -62,7 +61,6 @@ class ViewController: UIViewController {
     {
         for item in planet.getItems()
         {
-            print(item.getName())
             self.addItemToStackView(item: item);
         }
     }
@@ -73,7 +71,6 @@ class ViewController: UIViewController {
         itemView.loadUI(item: item);
         
         self.items.addArrangedSubview(itemView);
-        print("Added")
         self.view.addSubview(self.items);
     }
     
