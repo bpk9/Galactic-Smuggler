@@ -10,7 +10,7 @@ class Market
 {
     var day = 0
     var Location : Planet;
-    var ItemHistory = [String:[Double]]()
+    
     
     init(planet: Planet) {
         Location = planet
@@ -22,12 +22,6 @@ class Market
         }
     }
     
-    func passDay() {
-        for (key, value) in ItemHistory {
-            let Change = Int.random(in: -5 ... 5)
-            //ItemHistory[key][value.count] = ItemHistory[key][value.count - 1] + Change
-        }
-        
-    }
+    
     
 }

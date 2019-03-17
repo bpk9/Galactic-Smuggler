@@ -14,6 +14,7 @@ class Item
     private var name: String;
     private var price: Double;
     private var image: UIImage;
+    var ItemHistory = [String:[Double]]()
     
     init(name: String, image: UIImage)
     {
@@ -40,5 +41,15 @@ class Item
     func getImage() -> UIImage
     {
         return image;
+    }
+    
+    func passDay() {
+        for (key, _) in ItemHistory {
+            let Change = Int.random(in: -5 ... 5)
+            let newPrice = ItemHistory[key]![ItemHistory[key]!.count - 1] + Double(Change)
+            ItemHistory[key]![ItemHistory[key]!.count] = newPrice
+            setPrice(price: newPrice)
+        }
+        
     }
 }
