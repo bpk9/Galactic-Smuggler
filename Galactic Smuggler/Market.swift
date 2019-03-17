@@ -8,11 +8,26 @@
 
 class Market
 {
-    init()
-    {
-        
+    var day = 0
+    var Location : Planet;
+    var ItemHistory = [String:[Double]]()
+    
+    init(planet: Planet) {
+        Location = planet
+        var index = 0
+        for item in planet.getItems() {
+            ItemHistory[item.getName()] = [Model.EarthItemPrice[index]]
+            
+            index += 1
+        }
     }
     
-    
+    func passDay() {
+        for key in ItemHistory {
+            let Number = Int.random(in: -5 ... 5)
+            
+        }
+        
+    }
     
 }

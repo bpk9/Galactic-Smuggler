@@ -26,7 +26,10 @@ class Model{
     static var Earth = Planet(name: "Earth", image: Earthpic, items: EarthItems)
     static var Mars = Planet(name: "Mars", image: Marspic, items: MarsItems)
     //Item Arrays:
-   
+    
+    //Markets:
+    static var EarthMarket : Market = Market(planet: Earth)
+    static var EarthItemPrice : [Double] = [100, 20]
     
    
     
