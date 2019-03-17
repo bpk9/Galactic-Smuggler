@@ -9,7 +9,7 @@
 
 import UIKit
 
-class PlanetLaunchView: UIView
+class PlanetLaunchView: UIViewController
 {
     
     
@@ -21,13 +21,7 @@ class PlanetLaunchView: UIView
     @IBOutlet weak var PlanetImage: UIImageView!
     var IndexPlanet = 0
     var CurrentPlanet: Planet = Model.Earth;
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
     
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     func SetCurrent() {
         CurrentPlanet = Model.Planets[IndexPlanet%(Model.Planets.count)]
         PlanetImage.image = CurrentPlanet.getImage()
@@ -47,6 +41,7 @@ class PlanetLaunchView: UIView
     }
     
     @IBAction func BackAction(_ sender: UIButton) {
+        performSegue(withIdentifier: "unwindHome", sender: self)
     }
     
     
