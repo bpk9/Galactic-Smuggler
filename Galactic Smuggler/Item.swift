@@ -46,7 +46,10 @@ class Item
     
     func passDay() {
         let Change = self.getRandom();
-        let newPrice = PriceHistory[PriceHistory.count - 1] + Change;
+        var newPrice = PriceHistory[PriceHistory.count - 1] + Change;
+        if newPrice < 0 {
+            newPrice = newPrice - (1.2 * Change);
+        }
         PriceHistory.append(newPrice)
         setPrice(price: newPrice)
         
