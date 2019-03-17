@@ -12,12 +12,14 @@ class Inventory
 {
     private var money: Double;
     private var items = [String : Int]();
-    @IBOutlet weak var cash: UILabel!
+    
+    var delegate: InventoryDelegate?
     
     init(money: Double, items: [String : Int])
     {
         self.money = money;
         self.items = items;
+        self.updateCash();
     }
     
     func getMoney() -> Double
@@ -57,13 +59,11 @@ class Inventory
     {
         if let count = self.items[item.getName()]
         {
-            self.money += item.getPrice();
-            if (count > 1)
+            if (count > 0)
             {
                 self.items[item.getName()] = count - 1;
-                return;
+                self.money += item.getPrice();
             }
-            removeAll(item: item);
         }
         self.updateCash();
     }
@@ -90,7 +90,11 @@ class Inventory
     
     private func updateCash()
     {
-        self.cash.text = String(self.money);
+        self.delegate?.updateCash()
     }
     
+}
+
+protocol InventoryDelegate {
+    func updateCash();
 }

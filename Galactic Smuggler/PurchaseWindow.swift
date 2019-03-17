@@ -44,7 +44,7 @@ class PurchaseWindow: UIView
     {
         self.item = item;
         self.itemPicture.image = item.getImage();
-        self.itemPrice.text = String(item.getPrice());
+        self.itemPrice.text = String(format: "%.2f", item.getPrice());
         self.itemName.text = item.getName();
         self.lessButton.isHidden = true;
         self.updateUI()
@@ -70,7 +70,6 @@ class PurchaseWindow: UIView
     func sellItem() {
         Model.inventory.remove(item: self.item!)
         self.updateUI()
-        
     }
     
     func updateUI()
@@ -80,6 +79,10 @@ class PurchaseWindow: UIView
         if (count == 0)
         {
             self.lessButton.isHidden = true;
+        }
+        else
+        {
+            self.lessButton.isHidden = false;
         }
         
     }
