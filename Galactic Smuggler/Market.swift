@@ -14,14 +14,15 @@ class Market
     
     init(planet: Planet) {
         Location = planet
-        var index = 0
-        for item in planet.getItems() {
-            ItemHistory[item.getName()] = [Model.EarthItemPrice[index]]
-            
-            index += 1
         }
     }
     
+    func passDay() {
+        for planet in Model.Planets {
+            for item in planet.getItems() {
+                item.passDay()
+        }
+    }
     
     
 }
