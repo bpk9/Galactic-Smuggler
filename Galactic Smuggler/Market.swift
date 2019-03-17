@@ -8,11 +8,21 @@
 
 class Market
 {
-    init()
-    {
-        
+    var day = 0
+    var Location : Planet;
+    
+    
+    init(planet: Planet) {
+        Location = planet
+        }
     }
     
+    func passDay() {
+        for planet in Model.Planets {
+            for item in planet.getItems() {
+                item.passDay()
+        }
+    }
     
     
 }

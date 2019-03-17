@@ -14,12 +14,14 @@ class Item
     private var name: String;
     private var price: Double;
     private var image: UIImage;
+    var PriceHistory : [Double];
     
     init(name: String, image: UIImage)
     {
         self.name = name;
         self.price = 0;
         self.image = image;
+        PriceHistory = [];
     }
     
     func getName() -> String
@@ -40,5 +42,13 @@ class Item
     func getImage() -> UIImage
     {
         return image;
+    }
+    
+    func passDay() {
+        let Change = Int.random(in: -5 ... 5)
+        let newPrice = PriceHistory[PriceHistory.count - 1] + Double(Change)
+        PriceHistory[PriceHistory.count] = newPrice
+        setPrice(price: newPrice)
+        
     }
 }
