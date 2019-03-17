@@ -41,7 +41,7 @@ class Model{
     static var Helium2 : Item = Item(name: "Helium Gas", starting_price: 60.0, image: Heliumpic)
     static var Helium3 : Item = Item(name: "Helium Gas", starting_price: 5.0, image: Heliumpic)
     
-    static var Sun : Item = Item(name: "The Sun", starting_price: 1000000, image: Sunpic)
+    static var Sun : Item = Item(name: "The Sun", starting_price: 10000, image: Sunpic)
 
 
     
