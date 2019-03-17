@@ -25,7 +25,7 @@ class Model{
     //Items:
     static var Gold : Item = Item(name: "Gold Ingot", starting_price: 40.0, image: Goldpic)
     static var Water : Item = Item(name: "Water Barrel", starting_price: 20.0, image: Waterpic)
-    static var Niobium : Item = Item(name: "Niobium Ore", starting_price: 60.0 image: Niobiumpic)
+    static var Niobium : Item = Item(name: "Niobium Ore", starting_price: 60.0, image: Niobiumpic)
     //var Gold = Item(name: "Gold", image: )
     
     
