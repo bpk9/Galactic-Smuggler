@@ -8,27 +8,33 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, InventoryDelegate {
     
     @IBOutlet var cash: UILabel!
     @IBOutlet var items: UIStackView!
     @IBOutlet var planetName: UILabel!
     @IBOutlet weak var nextDay: UIButton!
     
-    // global
+    // other vars
     var inventory: Inventory = Model.inventory;
     var money: Double = Model.inventory.getMoney();
     
+    var current_planet: Planet!;
     
     override func viewDidLoad() {
         super.viewDidLoad()
         initGame();
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated);
+        self.updateItems();
+    }
+    
     func initGame()
     {
-        
-        updateCash();
+        self.inventory.delegate = self;
+        self.updateCash();
         
         Model.current_planet = Model.Earth;
         self.loadPlanet(planet: Model.current_planet);
@@ -37,7 +43,7 @@ class ViewController: UIViewController {
     
     func updateCash()
     {
-        self.cash.text = String(money);
+        self.cash.text = String(format: "%.2f", Model.inventory.getMoney());
     }
     
     func changePlanet(planet: Planet)
@@ -90,6 +96,15 @@ class ViewController: UIViewController {
         Model.passDay()
     }
     
-
+    func updateItems()
+    {
+        for view in self.items.subviews
+        {
+            if let view = view as? PurchaseWindow
+            {
+                view.updateUI();
+            }
+        }
+    }
 }
 

@@ -16,10 +16,10 @@ class Item
     private var image: UIImage;
     var PriceHistory : [Double];
     
-    init(name: String, image: UIImage)
+    init(name: String, starting_price: Double, image: UIImage)
     {
         self.name = name;
-        self.price = 0;
+        self.price = starting_price;
         self.image = image;
         PriceHistory = [price];
     }
@@ -45,10 +45,15 @@ class Item
     }
     
     func passDay() {
-        let Change = Double.random(in: -5 ... 5)
-        let newPrice = PriceHistory[PriceHistory.count - 1] + Double(Change)
+        let Change = self.getRandom();
+        let newPrice = PriceHistory[PriceHistory.count - 1] + Change;
         PriceHistory.append(newPrice)
         setPrice(price: newPrice)
         
+    }
+    
+    func getRandom() -> Double
+    {
+        return Double(Int(arc4random_uniform(11)) - 5) + drand48()
     }
 }
