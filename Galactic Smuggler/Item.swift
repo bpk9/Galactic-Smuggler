@@ -21,7 +21,7 @@ class Item
         self.name = name;
         self.price = 0;
         self.image = image;
-        PriceHistory = [];
+        PriceHistory = [price];
     }
     
     func getName() -> String
@@ -47,7 +47,7 @@ class Item
     func passDay() {
         let Change = Double.random(in: -5 ... 5)
         let newPrice = PriceHistory[PriceHistory.count - 1] + Double(Change)
-        PriceHistory[PriceHistory.count] = newPrice
+        PriceHistory.append(newPrice)
         setPrice(price: newPrice)
         
     }

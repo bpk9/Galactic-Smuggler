@@ -43,6 +43,11 @@ class Model{
     static var EarthMarket : Market = Market(planet: Earth)
     static var EarthItemPrice : [Double] = [100, 20]
     
-   
-    
+    static func passDay() {
+        for planet in Model.Planets {
+            for item in planet.getItems() {
+                item.passDay()
+            }
+        }
+    }
 }
