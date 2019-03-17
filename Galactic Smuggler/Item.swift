@@ -10,13 +10,26 @@ import UIKit
 
 class Item
 {
+    
+    private var name: String;
     private var price: Double;
     private var image: UIImage;
     
     init(name: String, image: UIImage)
     {
+        self.name = name;
         self.price = 0;
         self.image = image;
+    }
+    
+    func getName() -> String
+    {
+        return self.name;
+    }
+    
+    func setPrice(price: Double)
+    {
+        self.price = price;
     }
     
     func getPrice() -> Double
