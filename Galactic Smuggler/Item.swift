@@ -21,6 +21,7 @@ class Item
         self.name = name;
         self.price = 0;
         self.image = image;
+        PriceHistory = [];
     }
     
     func getName() -> String
