@@ -20,7 +20,7 @@ class PlanetLaunchView: UIView
     @IBOutlet weak var PlanetLabel: UILabel!
     @IBOutlet weak var PlanetImage: UIImageView!
     var IndexPlanet = 0
-    var CurrentPlanet = Model.Earth
+    var CurrentPlanet: Planet = Model.Earth;
     
     override init(frame: CGRect) {
         super.init(frame: frame)
