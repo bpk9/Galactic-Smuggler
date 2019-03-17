@@ -19,8 +19,6 @@ class ViewController: UIViewController, InventoryDelegate {
     var inventory: Inventory = Model.inventory;
     var money: Double = Model.inventory.getMoney();
     
-    var current_planet: Planet!;
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         initGame();
@@ -109,12 +107,5 @@ class ViewController: UIViewController, InventoryDelegate {
         }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
-    {
-        if let destination = segue.destination as? GraphViewController
-        {
-            
-        }
-    }
 }
 
