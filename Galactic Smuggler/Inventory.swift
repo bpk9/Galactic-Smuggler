@@ -88,6 +88,21 @@ class Inventory
         
     }
     
+    func getItems() -> [(String, Int)]
+    {
+        var stuff: [(String, Int)] = []
+        for item in self.items
+        {
+            stuff.append(item)
+        }
+        return stuff;
+    }
+    
+    func count() -> Int
+    {
+        return self.items.count;
+    }
+    
     private func updateCash()
     {
         self.delegate?.updateCash()
