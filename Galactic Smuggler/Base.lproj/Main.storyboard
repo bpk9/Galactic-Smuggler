@@ -110,6 +110,7 @@
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <action selector="BackAction:" destination="o6d-Kc-a68" eventType="touchUpInside" id="BVd-dg-DPW"/>
+                                    <segue destination="DhA-d8-VKw" kind="unwind" unwindAction="unwindHomeWithSource:" id="OYp-dS-DL1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qzM-k2-YVf">
@@ -118,6 +119,7 @@
                                 <state key="normal" title="LAUNCH"/>
                                 <connections>
                                     <action selector="LaunchAction:" destination="o6d-Kc-a68" eventType="touchUpInside" id="Njh-OD-9UI"/>
+                                    <segue destination="DhA-d8-VKw" kind="unwind" unwindAction="unwindHomeWithSource:" id="Ab5-oG-gsu"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Planet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bww-5f-2AC">

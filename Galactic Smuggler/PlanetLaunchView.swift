@@ -12,39 +12,67 @@ import UIKit
 class PlanetLaunchView: UIViewController
 {
     
-    
     @IBOutlet var LeftPlanet: UIButton!
     @IBOutlet var RightPlanet: UIButton!
     @IBOutlet var Launch: UIButton!
     @IBOutlet var Back: UIButton!
     @IBOutlet weak var PlanetLabel: UILabel!
     @IBOutlet weak var PlanetImage: UIImageView!
-    var IndexPlanet = 0
-    var CurrentPlanet: Planet = Model.Earth;
+    var index: Int = 0
+    var currentPlanet: Planet = Model.Earth;
     
-    func SetCurrent() {
-        CurrentPlanet = Model.Planets[IndexPlanet%(Model.Planets.count)]
-        PlanetImage.image = CurrentPlanet.getImage()
+    override func viewDidAppear(_ animated: Bool) {
+        self.LeftPlanet.isHidden = true;
+        self.index = 0
+        self.currentPlanet = Model.Earth;
+        self.setCurrent(planet: self.currentPlanet);
+    }
+    
+    func setCurrent(planet: Planet) {
+        PlanetImage.image = planet.getImage()
+        PlanetLabel.text = planet.getName()
+        self.currentPlanet = planet
     }
     
     @IBAction func LeftPlanetAction(_ sender: UIButton) {
-        IndexPlanet -= 1
-        SetCurrent()
+        self.RightPlanet.isHidden = false;
+        
+        if (index > 1)
+        {
+            index -= 1
+        }
+        else
+        {
+            index = 0;
+            self.LeftPlanet.isHidden = true;
+        }
+        self.setCurrent(planet: Model.Planets[index])
     }
     
     @IBAction func RightPlanetAction(_ sender: UIButton) {
-        IndexPlanet += 1
-        SetCurrent()
+        
+        self.LeftPlanet.isHidden = false;
+        index += 1
+        
+        if (index == Model.Planets.count - 1)
+        {
+            self.RightPlanet.isHidden = true
+        }
+        
+        self.setCurrent(planet: Model.Planets[index])
     }
     
     @IBAction func LaunchAction(_ sender: UIButton) {
-    }
-    
-    @IBAction func BackAction(_ sender: UIButton) {
+        print("Blast Off!")
         performSegue(withIdentifier: "unwindHome", sender: self)
     }
     
+    @IBAction func BackAction(_ sender: UIButton) {
+        performSegue(withIdentifier: "unwindHome", sender: nil)
+    }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    }
     
     
 }

@@ -51,6 +51,20 @@ class ViewController: UIViewController {
         self.cash.text = String(money);
     }
     
+    func changePlanet(planet: Planet)
+    {
+        removeAllItems()
+        loadPlanet(planet: planet)
+    }
+    
+    func removeAllItems()
+    {
+        for view in self.items.subviews
+        {
+            view.removeFromSuperview();
+        }
+    }
+    
     func loadPlanet(planet: Planet)
     {
         self.planetName.text = planet.getName();
@@ -74,9 +88,12 @@ class ViewController: UIViewController {
         self.view.addSubview(self.items);
     }
     
-    @IBAction func unwindHome(segue: UIStoryboardSegue)
+    @IBAction func unwindHome(source: UIStoryboardSegue)
     {
-        
+        if let source = source.source as? PlanetLaunchView
+        {
+            self.changePlanet(planet: source.currentPlanet)
+        }
     }
     
 }
