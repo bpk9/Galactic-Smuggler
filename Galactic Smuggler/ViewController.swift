@@ -36,7 +36,9 @@ class ViewController: UIViewController {
         self.money = starting_cash;
         updateCash();
         
-        updatePlanet();
+        self.current_planet = Model.Earth;
+        self.loadPlanet(planet: self.current_planet);
+        print(self.current_planet.getName())
         
     }
     
@@ -50,21 +52,17 @@ class ViewController: UIViewController {
         self.cash.text = String(money);
     }
     
-    func updatePlanet()
-    {
-        self.planetName.text = self.current_planet?.getName() ?? "Current Planets";
-    }
-    
     func loadPlanet(planet: Planet)
     {
         self.planetName.text = planet.getName();
-        self.loadStackForPlanet(planet: planet)
+        self.loadStackForPlanet(planet: planet);
     }
     
     func loadStackForPlanet(planet: Planet)
     {
         for item in planet.getItems()
         {
+            print(item.getName())
             self.addItemToStackView(item: item);
         }
     }
@@ -73,6 +71,10 @@ class ViewController: UIViewController {
     {
         let itemView: PurchaseWindow = PurchaseWindow.instanceFromNib() as! PurchaseWindow;
         itemView.loadUI(item: item);
+        
+        self.items.addArrangedSubview(itemView);
+        print("Added")
+        self.view.addSubview(self.items);
     }
     
 }

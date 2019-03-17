@@ -21,8 +21,8 @@ class Model{
     static var Water : Item = Item(name: "Water Barrel", image: Waterpic)
     static var Niobium : Item = Item(name: "Niobium Ore", image: Niobiumpic)
     //var Gold = Item(name: "Gold", image: )
-    static let EarthItems : [Item] = [Gold]
-    static let MarsItems : [Item] = []
+    static let EarthItems: [Item] = [Gold]
+    static let MarsItems: [Item] = []
     static var Planets : [Planet] = []
     static var Earth = Planet(name: "Earth", image: Earthpic, items: EarthItems)
     static var Mars = Planet(name: "Mars", image: Marspic, items: MarsItems)
