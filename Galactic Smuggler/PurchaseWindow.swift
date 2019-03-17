@@ -19,10 +19,11 @@ class PurchaseWindow: UIView
     @IBOutlet var itemName: UILabel!
     
     // other variables
-    var itemCounter: Int = 0;
+    var item: Item?;
     
     init(frame: CGRect, item: Item)
     {
+        self.item = item;
         super.init(frame: frame);
         loadUI(item: item);
     }
@@ -41,41 +42,46 @@ class PurchaseWindow: UIView
     // load UI elements
     func loadUI(item: Item)
     {
+        self.item = item;
         self.itemPicture.image = item.getImage();
         self.itemPrice.text = String(item.getPrice());
         self.itemName.text = item.getName();
         self.lessButton.isHidden = true;
+        self.updateUI()
     }
     
     // called when more button is clicked
     @IBAction func moreButtonAction(_ sender: Any)
     {
-        addItem();
+        buyItem();
     }
     
     // called when less button is clicked
     @IBAction func lessButtonAction(_ sender: Any)
     {
-        removeItem();
+        sellItem();
     }
     
-    func addItem() {
-        itemCounter += 1;
-        self.itemCount.text = String(itemCounter);
-        self.lessButton.isHidden = false;
+    func buyItem() {
+        Model.inventory.add(item: self.item!)
+        self.updateUI()
     }
     
-    func removeItem() {
-        if(itemCounter > 1)
+    func sellItem() {
+        Model.inventory.remove(item: self.item!)
+        self.updateUI()
+        
+    }
+    
+    func updateUI()
+    {
+        let count = Model.inventory.count(item: self.item);
+        self.itemCount.text = String(count);
+        if (count == 0)
         {
-            itemCounter -= 1;
-        }
-        else
-        {
-            itemCounter = 0;
             self.lessButton.isHidden = true;
         }
-        self.itemCount.text = String(itemCounter);
+        
     }
     
 }

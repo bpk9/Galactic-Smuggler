@@ -15,13 +15,9 @@ class ViewController: UIViewController {
     @IBOutlet var planetName: UILabel!
     @IBOutlet weak var nextDay: UIButton!
     
-    // init variables
-    let starting_cash = 100.0;
-    var starting_items: [String : Int] = [:];
-    
     // global
-    var inventory: Inventory!;
-    var money: Double = 0;
+    var inventory: Inventory = Model.inventory;
+    var money: Double = Model.inventory.getMoney();
     var current_planet: Planet!;
     
     override func viewDidLoad() {
@@ -32,19 +28,11 @@ class ViewController: UIViewController {
     func initGame()
     {
         
-        initInventory();
-        
-        self.money = starting_cash;
         updateCash();
         
         self.current_planet = Model.Earth;
         self.loadPlanet(planet: self.current_planet);
         
-    }
-    
-    func initInventory()
-    {
-        self.inventory = Inventory(money: starting_cash, items: starting_items);
     }
     
     func updateCash()

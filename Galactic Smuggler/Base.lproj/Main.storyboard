@@ -223,5 +223,20 @@
             </objects>
             <point key="canvasLocation" x="1455" y="131"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="7IC-Xv-SBH">
+            <objects>
+                <viewController id="RUa-jS-Jzl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IS5-wW-GlU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="bvx-CR-0lk"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JEp-xU-ssw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2093" y="131"/>
+        </scene>
     </scenes>
 </document>

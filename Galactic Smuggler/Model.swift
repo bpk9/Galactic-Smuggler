@@ -10,6 +10,8 @@ import UIKit
 
 class Model{
     
+    static let inventory = Inventory(money: 100, items: [:])
+    
     //Pictures:
     static let Earthpic = UIImage(named: "EarthSmuggle.png") as! UIImage
     static let Marspic = UIImage(named: "MarsSmuggle.png") as! UIImage
