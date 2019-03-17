@@ -21,7 +21,7 @@ class PlanetLaunchView: UIView
     @IBOutlet weak var PlanetImage: UIImageView!
     var IndexPlanet = 0
     var CurrentPlanet: Planet = Model.Earth;
-    
+    PlanetImage.image = CurrentPlanet.getImage()
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -31,6 +31,7 @@ class PlanetLaunchView: UIView
     }
     func SetCurrent() {
         CurrentPlanet = Model.Planets[IndexPlanet%(Model.Planets.count)]
+        PlanetImage.image = CurrentPlanet.getImage()
     }
     
     @IBAction func LeftPlanetAction(_ sender: UIButton) {
