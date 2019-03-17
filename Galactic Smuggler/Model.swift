@@ -16,7 +16,7 @@ class Model{
     
     //Items:
     //var Gold = Item(name: "Gold", image: )
-    
+    static var Planets : [Planet] = []
     //Item Arrays:
     let EarthItems = ["Humans", "Organs", "Water", "Iron", "Tungsten", "Aluminum", "Lithium"]
     let MarsItems = ["Iron", "Tungsten", "Aluminum", "Gold", "Lithium", "Niobium"]
@@ -25,7 +25,7 @@ class Model{
     func InitializePlanets() {
         var Earth = Planet(name: "Earth", image: Earthpic, items: EarthItems)
         var Mars = Planet(name: "Mars", image: Marspic, items: MarsItems)
-        var Planets = [Earth, Mars]
+        Planets = [Earth, Mars]
                            
     }
     
