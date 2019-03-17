@@ -16,6 +16,7 @@ class PurchaseWindow: UIView
     @IBOutlet var itemPrice: UILabel!
     @IBOutlet var moreButton: UIButton!
     @IBOutlet var itemCount: UILabel!
+    @IBOutlet var itemName: UILabel!
     
     // other variables
     var itemCounter: Int = 0;
@@ -42,6 +43,8 @@ class PurchaseWindow: UIView
     {
         self.itemPicture.image = item.getImage();
         self.itemPrice.text = String(item.getPrice());
+        self.itemName.text = item.getName();
+        self.lessButton.isHidden = true;
     }
     
     // called when more button is clicked
@@ -66,13 +69,13 @@ class PurchaseWindow: UIView
         if(itemCounter > 1)
         {
             itemCounter -= 1;
-            self.itemCount.text = String(itemCounter);
-            if (itemCounter == 0) { self.lessButton.isHidden = true; }
         }
         else
         {
-            // no-op
+            itemCounter = 0;
+            self.lessButton.isHidden = true;
         }
+        self.itemCount.text = String(itemCounter);
     }
     
 }
