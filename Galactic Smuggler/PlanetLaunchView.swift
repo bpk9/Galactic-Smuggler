@@ -21,9 +21,6 @@ class PlanetLaunchView: UIViewController
     var index: Int = 0
     var currentPlanet: Planet = Model.Earth
     
-
-    
-    
     override func viewDidAppear(_ animated: Bool) {
         self.LeftPlanet.isHidden = true;
         self.index = 0
@@ -33,6 +30,14 @@ class PlanetLaunchView: UIViewController
     func setCurrent(planet: Planet) {
         PlanetImage.image = planet.getImage()
         PlanetLabel.text = planet.getName()
+        if(Model.current_planet.getName() == planet.getName())
+        {
+            self.Launch.isHidden = true;
+        }
+        else
+        {
+            self.Launch.isHidden = false;
+        }
         self.currentPlanet = planet
     }
     
@@ -51,8 +56,6 @@ class PlanetLaunchView: UIViewController
             self.LeftPlanet.isHidden = true;
         }
         self.setCurrent(planet: Model.Planets[index])
-        //print(currentPlanet.getName())
-        UpdateUI()
     }
     
     @IBAction func RightPlanetAction(_ sender: UIButton) {
@@ -65,30 +68,16 @@ class PlanetLaunchView: UIViewController
         }
         
         self.setCurrent(planet: Model.Planets[index])
-        //print(currentPlanet.getName())
-        UpdateUI()
     }
     
     @IBAction func LaunchAction(_ sender: UIButton) {
         Model.passDay()
+        Model.current_planet = self.currentPlanet;
         performSegue(withIdentifier: "unwindHome", sender: self)
     }
     
     @IBAction func BackAction(_ sender: UIButton) {
         performSegue(withIdentifier: "unwindHome", sender: nil)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    }
-    func UpdateUI() {
-        //print(Model.current_planet.getName(), currentPlanet.getName())
-        if (Model.current_planet.getName() == currentPlanet.getName()) {
-            Launch.isHidden = true;
-        }
-        else
-        {
-            Launch.isHidden = false;
-        }
     }
     
 }
