@@ -21,7 +21,7 @@ class Model{
     static let Waterpic = UIImage(named: "waterdrum.png") as! UIImage
     static let Niobiumpic = UIImage(named: "Niodium.png") as! UIImage
     static let Heliumpic = UIImage(named: "Helium.png") as! UIImage
-
+    static let Sunpic = UIImage(named: "sun.png") as! UIImage
     
     
     //Items:
@@ -40,12 +40,15 @@ class Model{
     static var Helium1 : Item = Item(name: "Helium Gas", starting_price: 30.0, image: Heliumpic)
     static var Helium2 : Item = Item(name: "Helium Gas", starting_price: 60.0, image: Heliumpic)
     static var Helium3 : Item = Item(name: "Helium Gas", starting_price: 5.0, image: Heliumpic)
+    
+    static var Sun : Item = Item(name: "The Sun", starting_price: 1000000, image: Sunpic)
+
 
     
     
-    static let EarthItems: [Item] = [Gold1, Water1, Niobium1, Helium1]
-    static let MarsItems: [Item] = [Gold2, Water2, Niobium2, Helium2]
-    static let MoonItems: [Item] = [Gold3, Water3, Niobium3, Helium3]
+    static let EarthItems: [Item] = [Gold1, Water1, Niobium1, Helium1, Sun]
+    static let MarsItems: [Item] = [Gold2, Water2, Niobium2, Helium2, Sun]
+    static let MoonItems: [Item] = [Gold3, Water3, Niobium3, Helium3, Sun]
     
     static var current_planet: Planet! = Earth;
     
