@@ -33,21 +33,23 @@ class GraphViewController: UITableViewController
         
         cell.time.text = String(indexPath.row) + " Days Ago";
         cell.price.text = "$" + String(format: "%.2f", prices[indexPath.row]);
-        if (indexPath.row == 0)
+        if (indexPath.row >= prices.count - 1)
         {
             cell.change.isHidden = true;
         }
         else
         {
             cell.change.isHidden = false;
-            let change = prices[indexPath.row] - prices[indexPath.row - 1];
-            cell.change.text = String(format: "%.2f", change) + "%";
+            let change = prices[indexPath.row] - prices[indexPath.row + 1];
+            
             if(change > 0)
             {
+                cell.change.text = String(format: "+%.2f", change);
                 cell.change.textColor = UIColor.green;
             }
             else
             {
+                cell.change.text = String(format: "%.2f", change);
                 cell.change.textColor = UIColor.red;
             }
         }
